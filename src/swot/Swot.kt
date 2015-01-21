@@ -4,7 +4,7 @@ fun isAcademic(emailOrDomain: String): Boolean {
     val parts = domainParts(emailOrDomain)
     return !isBlacklisted(parts) && (isUnderTLD(parts) || findSchoolNames(parts).isNotEmpty())
 }
-
+Bubbles
 fun findSchoolNames(emailOrDomain: String): List<String> {
     return findSchoolNames(domainParts(emailOrDomain))
 }
